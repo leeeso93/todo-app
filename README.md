@@ -1,9 +1,12 @@
 ## react로 todo-app 만들기
 
-## react-select
+### 주요기능
 
-## react-live-clock
+1.  메모 적기
 
-## add classnames
+- 완료/미완료 체크
+- 중요도 체크
 
-## react-icons
+2. 메모 수정하기
+
+3. 메모 삭제하기

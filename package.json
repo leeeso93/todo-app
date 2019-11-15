@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -37,6 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "homepage": "https://github.com/leeeso93/todo-app.git"
+    "homepage": "http://leeeso93.github.io/todo-app"
   }
 }
