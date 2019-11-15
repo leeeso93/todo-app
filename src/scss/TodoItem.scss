@@ -1,0 +1,82 @@
+@import '../scss/base.scss';
+
+@mixin textoverflow() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.TodoItem {
+  padding: 0.5rem 2rem;
+
+  &-main {
+    display: flex;
+    align-items: center;
+
+    .checkbox {
+      cursor: pointer;
+      align-items: center; //세로 중앙정렬
+      font-size: 1.5rem;
+      display: flex;
+      flex: 1 1;
+      svg {
+        //아이콘
+        font-size: 2rem;
+      }
+      .content {
+        margin-left: 0.5rem;
+      }
+
+      //체크되었을때 보여줄 스타일
+      &.checked {
+        //.checkbox.checked
+        svg {
+          color: $color-red;
+        }
+        .content {
+          color: #adb5bd;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    .edit,
+    .remove {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      color: $color-gray;
+      cursor: pointer;
+      margin: 0 0.5rem;
+    }
+  }
+
+  &-sub {
+    color: $color-red;
+    margin-left: 2.5rem;
+
+    .edit-box {
+      display: flex;
+      margin-top: 1rem;
+      input {
+        @include input();
+        border: 1px solid #e5e5e5;
+        border-radius: 0.5rem;
+        flex: 1;
+      }
+      .btn {
+        background: none;
+        outline: none;
+        border: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.1s background ease-in;
+      }
+    }
+  }
+}

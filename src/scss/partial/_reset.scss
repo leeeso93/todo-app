@@ -1,0 +1,30 @@
+//구글폰트 - 나눔고딕, lato
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300|Nanum+Gothic:400,700,800&display=swap&subset=korean');
+
+//bootstrap
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+html {
+  font-size: 62.5%; //16px의 62.5% = 10px = 1rem
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 3rem;
+  font-size: 1.2rem;
+  background: #e9ecef;
+}
+
+a {
+  color: $color-dark;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

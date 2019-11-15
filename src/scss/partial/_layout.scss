@@ -1,0 +1,65 @@
+.form-control {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.btn-red {
+  background-color: $color-red;
+  color: $color-white;
+  &:hover {
+    background-color: $color-red-dark;
+    color: $color-white;
+  }
+}
+
+.btn-outline-gray {
+  background-color: $color-white;
+  color: $color-gray;
+  border: 1px solid $color-gray;
+  &:hover {
+    background-color: $color-gray-light;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layout {
+    width: 100% !important;
+  }
+}
+
+.layout {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.layout-desc {
+  color: $color-gray;
+  font-size: 1.2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin: 2rem 0 0 2rem;
+}
+
+.icon {
+  @include center();
+}
+
+.flex {
+  display: flex;
+}

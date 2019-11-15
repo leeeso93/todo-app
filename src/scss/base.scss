@@ -1,0 +1,15 @@
+$color-gray-light: #f5f5f5;
+$color-placeholder: #dee2e6;
+$color-gray: #5f5f5f;
+$color-white: #fff;
+$color-red: #db4c3f;
+$color-red-dark: #b94338;
+$color-dark: #333;
+
+@import './partial/mixin';
+
+@import './partial/reset';
+
+@import './partial/layout';
+
+@import './partial/typo';
